@@ -6,7 +6,8 @@ class MathPattern(markdown.inlinepatterns.Pattern):
         markdown.inlinepatterns.Pattern.__init__(self, r'(?<!\\)(\$\$?)(.+?)\2')
 
     def handleMatch(self, m):
-        node = markdown.util.etree.Element('span class="math"')
+        #node = markdown.util.etree.Element('span class="math"')
+        node = Element('span class="math"')
         # node.text = markdown.util.AtomicString(m.group(2) + m.group(3) + m.group(2))
         if m.group(2) == "$$":
             node.text = markdown.util.AtomicString("\[" + m.group(3) + "\]")
@@ -16,6 +17,8 @@ class MathPattern(markdown.inlinepatterns.Pattern):
 
 
 class MathExtension(markdown.Extension):
-
-    def extendMarkdown(self, md, md_globals):
-        md.inlinePatterns.add('math', MathPattern(), '<escape')
+#    def extendMarkdown(self, md, md_globals):
+#        md.inlinePatterns.add('math', MathPattern(), '<escape')
+    def extendMarkdown(self, md):
+        md.inlinePatterns.register(MathPattern(), 'math', 185)
+        
