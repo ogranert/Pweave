@@ -1,0 +1,26 @@
+[project]
+name = "Pweave"
+version = "0.30.2"
+dependencies = [
+"Markdown>=3.4",
+"pygments",
+"ipython",
+"nbformat",
+"nbconvert",
+"jupyter_client",
+]
+authors = [
+  {name = "mpastell"},
+  ]
+maintainers = [
+  {name = "Oliver Granert"} 
+]  
+readme = "README.rst"
+keywords = ["swaeve","reports","python"]
+license = {file = "LICENSE.txt"}
+[project.urls]
+Homepage = "https://mpastell.com/pweave/"
+requires-python = ">=3.2"
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
