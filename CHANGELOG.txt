@@ -1,3 +1,9 @@
+In 0.30.3 (fork ogranert)
+* Adjust to API changes in Python-Markdown 3.0 
+  (code changes taken from mitya57 (merge request)
+* Add version information for markdown package (setup.py, requirements.txt)
+* Add initial (experimental) pyproject.toml
+
 In 0.30.2
 * Fix bug in initial whitespace in chunk output
 * Remove build artefacts from release tarball
