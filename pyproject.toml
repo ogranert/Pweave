@@ -13,7 +13,7 @@ authors = [
   {name = "mpastell"},
   ]
 maintainers = [
-  {name = "Oliver Granert"} 
+  {name = "OGranert"} 
 ]  
 readme = "README.rst"
 keywords = ["swaeve","reports","python"]
